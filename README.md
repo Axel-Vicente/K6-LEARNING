@@ -86,7 +86,7 @@ Para una ejecución rápida del test deberemos realizar este comando:
 ```shell
 k6 run test.js
 ```
-En el caso de querer para la ejecición simplemente presione __*ctrl + c*__
+En el caso de querer para la ejecición simplemente presione `ctrl + c`
 
 ## ✅ Tipos de test <a name="tests"></a>
 
@@ -121,6 +121,7 @@ Son ideales para la integración continua, ya que pueden ejecutarse automáticam
 ***
 
 ### [Load testing](Types_of_tests/load_test.js)
+
 <p align="justify">Las pruebas de carga, son un conjunto de pruebas que está diseñado para evaluar el rendimiento y la capacidad de carga de una aplicación bajo condiciones de uso intensivo. Las pruebas de carga permiten identificar cuellos de botella, evaluar el tiempo de respuesta y verificar la capacidad de escalabilidad de la aplicación.
 
 <p align="center">
@@ -150,6 +151,39 @@ Para este tipo de pruebas vamos a dividir la prueba en fases <i>("stages")</i>. 
 **9. Evaluar el Comportamiento a Largo Plazo:** Analizar cómo se comporta la aplicación durante períodos prolongados de carga para comprender su estabilidad y rendimiento a largo plazo.
 
 **10. Realizar Validaciones de Implementación:** Integrar pruebas de carga en procesos de integración continua para validar el rendimiento después de cada implementación y garantizar que no se introduzcan degradaciones no deseadas.
+
+### [Stress testing](Types_of_tests/stress_test.js)
+
+<p align="justify">Las pruebas de estrés se centran en evaluar cómo se comporta una aplicación cuando se somete a niveles extremos de carga o a condiciones que superan los límites de capacidad normales. El objetivo principal es identificar el punto de quiebre y comprender cómo la aplicación se recupera después de situaciones de estrés extremo.<br>
+Un claro ejemplo es una aplicación de compra online donde se acerca el black friday y el número de usuario aumenta significativamente esos días, por lo tanto la aplicación tiene que estar preparada para esa cantidad de usuarios en un plazo corto de tiempo.
+
+<p align="center">
+  <img width=500px height=275px src="imgs/ldt2.png" alt="loadTest"></a>
+</p>
+
+Como se puede observar, las pruebas de estrés tienen la misma lógica de las pruebas de carga, con la diferencia de la cantidad de usuarios que acceden a la página en ese tiempo, buscando así el punto de quiebre de la aplicación.
+> (Ver imagen para más información)
+
+### Propósito de los load test:
+**1. Identificar el Punto de Quiebre:** Determinar el nivel máximo de carga que la aplicación puede manejar antes de experimentar fallas, degradación del rendimiento o errores críticos.
+
+**2. Evaluar la Estabilidad en Condiciones Extremas:** Probar la capacidad de la aplicación para mantener la estabilidad y el rendimiento bajo condiciones extremas, como picos de tráfico repentinos o altas cargas sostenidas.
+
+**3. Validar Mecanismos de Recuperación:** Comprobar la eficacia de los mecanismos de recuperación de la aplicación después de periodos de estrés extremo. Esto incluye la capacidad de la aplicación para recuperarse y volver a un estado operativo normal.
+
+**4. Identificar Cuellos de Botella Ocultos:** Descubrir componentes, servicios o funciones específicas que pueden volverse ineficientes o experimentar problemas de rendimiento solo cuando la carga alcanza niveles extremos.
+
+**5. Evaluar la Resiliencia de la Arquitectura:** Comprobar la capacidad de la arquitectura de la aplicación para resistir presiones extremas sin comprometer la disponibilidad o la integridad de los datos.
+
+**6. Anticipar Situaciones Críticas:** Identificar posibles escenarios críticos que podrían afectar el rendimiento de la aplicación en situaciones del mundo real, como eventos de marketing, lanzamientos de productos o emergencias.
+
+**7. Cumplir con Estándares de Rendimiento:** Validar que la aplicación cumple con los estándares de rendimiento establecidos en términos de tiempos de respuesta, latencia y otros indicadores clave, incluso bajo condiciones extremas.
+
+**8. Optimizar Recursos de Infraestructura:** Identificar oportunidades de optimización en términos de recursos del sistema, como CPU, memoria y ancho de banda, durante condiciones de carga máxima.
+
+**9. Mejorar la Planificación de Capacidad:** Proporcionar datos valiosos para la planificación de capacidad futura, permitiendo a los equipos ajustar la infraestructura para manejar aumentos proyectados en la carga de trabajo.
+
+**10. Evaluar el Comportamiento a Largo Plazo:** Analizar cómo se comporta la aplicación durante períodos prolongados de estrés para comprender su resistencia y rendimiento a largo plazo.
 
 
 ## 🚀 Deployment <a name = "deployment"></a>
