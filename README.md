@@ -198,7 +198,9 @@ Estás pruebas tienen un objetivo conciso, evaluar la capacidad de la aplicació
 
 ### Propósito de los spike test:
 **1. Evaluar la Capacidad de Escalabilidad Vertical:** Verifica la capacidad de la aplicación para manejar incrementos repentinos en la carga de usuarios, especialmente cuando se produce un aumento significativo en un corto período de tiempo, simulando ráfagas repentinas de tráfico para evaluar cómo la aplicación escala verticalmente, es decir, si puede asignar eficientemente más recursos para manejar la carga adicional.
+
 **2. Validar la Respuesta en Situaciones Críticas:** Comprueba cómo responde la aplicación en situaciones críticas donde la demanda de usuarios aumenta de manera significativa, como durante eventos especiales o promociones. Logrado mediante la creación de escenarios de prueba que simulan ráfagas de tráfico repentinas, se evalúa la capacidad de la aplicación para mantener la estabilidad y el rendimiento bajo condiciones de estrés temporal.
+
 **3. Identificar Problemas de Degradación Persistente:** Detecta posibles problemas de rendimiento que podrían persistir después del periodo de incremento repentino, indicando debilidades en la capacidad de la aplicación para recuperarse completamente. Esto se consigue analizando el rendimiento y la estabilidad de la aplicación después de la prueba de incremento repentino, se busca identificar cualquier degradación persistente en el rendimiento que pueda requerir atención y optimización.
 
 ## 🚀 Deployment <a name = "deployment"></a>
