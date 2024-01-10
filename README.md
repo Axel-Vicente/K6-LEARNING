@@ -158,13 +158,13 @@ Para este tipo de pruebas vamos a dividir la prueba en fases <i>("stages")</i>. 
 Un claro ejemplo es una aplicación de compra online donde se acerca el black friday y el número de usuario aumenta significativamente esos días, por lo tanto la aplicación tiene que estar preparada para esa cantidad de usuarios en un plazo corto de tiempo.
 
 <p align="center">
-  <img width=500px height=275px src="imgs/ldt2.png" alt="loadTest"></a>
+  <img width=500px height=275px src="imgs/ldt2.png" alt="stressTest"></a>
 </p>
 
 Como se puede observar, las pruebas de estrés tienen la misma lógica de las pruebas de carga, con la diferencia de la cantidad de usuarios que acceden a la página en ese tiempo, buscando así el punto de quiebre de la aplicación.
 > (Ver imagen para más información)
 
-### Propósito de los load test:
+### Propósito de los stress test:
 **1. Identificar el Punto de Quiebre:** Determinar el nivel máximo de carga que la aplicación puede manejar antes de experimentar fallas, degradación del rendimiento o errores críticos.
 
 **2. Evaluar la Estabilidad en Condiciones Extremas:** Probar la capacidad de la aplicación para mantener la estabilidad y el rendimiento bajo condiciones extremas, como picos de tráfico repentinos o altas cargas sostenidas.
@@ -185,6 +185,21 @@ Como se puede observar, las pruebas de estrés tienen la misma lógica de las pr
 
 **10. Evaluar el Comportamiento a Largo Plazo:** Analizar cómo se comporta la aplicación durante períodos prolongados de estrés para comprender su resistencia y rendimiento a largo plazo.
 
+### [Spike testing](Types_of_tests/spike_test.js)
+
+<p align="justify">Las pruebas de incremento están diseñadas para evaluar cómo responde la aplicación cuando experimenta un aumento brusco y significativo en la carga o tráfico. El objetivo principal es medir la capacidad de la aplicación para gestionar ráfagas repentinas de usuarios y evaluar su comportamiento bajo condiciones de estrés temporal.
+
+<p align="center">
+  <img width=500px height=275px src="imgs/spk.png" alt="spikeTest"></a>
+</p>
+
+Estás pruebas tienen un objetivo conciso, evaluar la capacidad de la aplicación para manejar un aumento del 200% en la carga de usuarios en menos de 5 minutos.
+> (Ver imagen para más información)
+
+### Propósito de los spike test:
+**1. Evaluar la Capacidad de Escalabilidad Vertical:** Verifica la capacidad de la aplicación para manejar incrementos repentinos en la carga de usuarios, especialmente cuando se produce un aumento significativo en un corto período de tiempo, simulando ráfagas repentinas de tráfico para evaluar cómo la aplicación escala verticalmente, es decir, si puede asignar eficientemente más recursos para manejar la carga adicional.
+**2. Validar la Respuesta en Situaciones Críticas:** Comprueba cómo responde la aplicación en situaciones críticas donde la demanda de usuarios aumenta de manera significativa, como durante eventos especiales o promociones. Logrado mediante la creación de escenarios de prueba que simulan ráfagas de tráfico repentinas, se evalúa la capacidad de la aplicación para mantener la estabilidad y el rendimiento bajo condiciones de estrés temporal.
+**3. Identificar Problemas de Degradación Persistente:** Detecta posibles problemas de rendimiento que podrían persistir después del periodo de incremento repentino, indicando debilidades en la capacidad de la aplicación para recuperarse completamente. Esto se consigue analizando el rendimiento y la estabilidad de la aplicación después de la prueba de incremento repentino, se busca identificar cualquier degradación persistente en el rendimiento que pueda requerir atención y optimización.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
