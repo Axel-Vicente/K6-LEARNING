@@ -203,6 +203,26 @@ Estás pruebas tienen un objetivo conciso, evaluar la capacidad de la aplicació
 
 **3. Identificar Problemas de Degradación Persistente:** Detecta posibles problemas de rendimiento que podrían persistir después del periodo de incremento repentino, indicando debilidades en la capacidad de la aplicación para recuperarse completamente. Esto se consigue analizando el rendimiento y la estabilidad de la aplicación después de la prueba de incremento repentino, se busca identificar cualquier degradación persistente en el rendimiento que pueda requerir atención y optimización.
 
+### [Breakpoint testing](Types_of_tests/breakpoint_test.js)
+
+<p align="justify">Las pruebas de ruptura están diseñadas para evaluar el comportamiento de la aplicación cuando se somete a cargas extremas que superan su capacidad máxima. Este tipo de prueba tiene como objetivo identificar el punto de quiebre o el límite absoluto de la aplicación, proporcionando información valiosa sobre su estabilidad y resistencia bajo condiciones extremas y durante un tiempo prolongado.
+
+<p align="center">
+  <img width=500px height=275px src="imgs/brpt.png" alt="breakpointTest"></a>
+</p>
+
+> (Ver imagen para más información)
+
+### [Soak testing](Types_of_tests/soak_test.js)
+
+<p align="justify">Las pruebas de duración prolongada están diseñadas para evaluar la estabilidad y el rendimiento sostenido de una aplicación bajo carga constante y prolongada. Estas pruebas buscan identificar posibles problemas de fuga de recursos, memoria o cualquier degradación gradual del rendimiento que pueda surgir después de un periodo extendido de actividad.
+
+<p align="center">
+  <img width=500px height=275px src="imgs/sk1.png" alt="soakTest"></a>
+</p>
+
+> (Ver imagen para más información)
+
 ## 🚀 Deployment <a name = "deployment"></a>
 
 Add additional notes about how to deploy this on a live system.
