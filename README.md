@@ -26,11 +26,11 @@
 - [Instalación](#instalation)
 - [Lanzamiento de los tests](#runTests)
 - [Tipos de test](#tests)
-- [Built Using](#built_using)
+- [Test scripts con K6](#examples)
 - [Autor](#author)
 - [Agradecimientos](#acknowledgement)
 
-## 🔎 ¿Que es K6? <a name = "about"></a>
+## 🔎 ¿Que es K6? <a id = "about"></a>
 
 Grafana k6 es una herramienta de prueba de carga de código abierto que hace que las pruebas de rendimiento sean fáciles y productivas para los equipos de ingeniería. k6 es gratuito, centrado en el desarrollador y extensible.
 
@@ -38,7 +38,7 @@ Con k6, puede probar la confiabilidad y el rendimiento de sus sistemas y detecta
 
 k6 ha sido desarrollado por [Grafana Labs](https://grafana.com/) y la comunidad.
 
-## 💻 Instalación <a name = "instalation"></a>
+## 💻 Instalación <a id = "instalation"></a>
 
 ### Linux
 ```bash
@@ -79,7 +79,7 @@ Imagen separada que puede usar con "chromium" instalado para ejecutar pruebas de
 docker pull grafana/k6:master-with-browser
 ```
 
-## ▶️ Lanzamiento de los tests <a name = "runTests"></a>
+## ▶️ Lanzamiento de los tests <a id = "runTests"></a>
 
 Para una ejecución rápida del test deberemos realizar este comando:
 
@@ -88,7 +88,7 @@ k6 run test.js
 ```
 En el caso de querer para la ejecición simplemente presione `ctrl + c`
 
-## ✅ Tipos de test <a name="tests"></a>
+## ✅ Tipos de test <a id="tests"></a>
 
 ### [Smoke testing](Types_of_tests/smoke_test.js)
 
@@ -223,21 +223,28 @@ Estás pruebas tienen un objetivo conciso, evaluar la capacidad de la aplicació
 
 > (Ver imagen para más información)
 
-## 🚀 Deployment <a name = "deployment"></a>
+## 📊 Test scripts con K6 <a id = "examples"></a>
+> [Script con los ejemplos](Test_scripts_examples/examples.js)
+### 1. Aserciones
+Para el uso de *asserts* deberemos importar *check*: `import { check } from 'k6'`, este tiene esta estructura: `check({valor booleano esperado, lógica a comprobar})`
+```js
+check(true, {
+        'Assertion text' : (value) => value === true
+    });
+```
 
-Add additional notes about how to deploy this on a live system.
 
-## ⛏️ Built Using <a name = "built_using"></a>
+## ⛏️ Built Using <a id = "built_using"></a>
 
 - [MongoDB](https://www.mongodb.com/) - Database
 - [Express](https://expressjs.com/) - Server Framework
 - [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## ✍️ Autor <a name = "author"></a>
+## ✍️ Autor <a id = "author"></a>
 
 - [@Axel-Vicente](https://github.com/Axel-Vicente) - Idea & Initial work
 
-## 🎉 Agradecimientos <a name = "acknowledgement"></a>
+## 🎉 Agradecimientos <a id = "acknowledgement"></a>
 
 Formación inspirada en el curso: poner url (Valentin Despa)
